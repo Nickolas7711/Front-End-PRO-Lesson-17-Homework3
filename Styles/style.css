@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+.wrapp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.categories {
+    float: left;
+    width: 20%;
+    margin-left: 30px;
+}
+
+h3, h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+h3:hover {
+    color: blue;
+}
+
+h2:hover {
+    color: blue;
+}
+
+p {
+    font-family: 'Caprasimo', cursive;
+    font-size: 20px;
+    font-weight: 400; 
+}
+
+.categories li {
+    font-family: 'Caprasimo', cursive;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.categories li:hover {
+    color: blue;
+    background: scroll;
+}
+
+.items {
+    float: left;
+    width: 40%;
+}
+
+.item-details {
+    float: left;
+    width: 40%;
+}
+
+.item-details img {
+    max-width: 500px;
+}
+
+.item-details button {
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px 50px;
+    font-size: 20px;
+    background-color: rgb(9, 230, 20);
+    border: none;
+    cursor: pointer;
+    color: rgb(8, 49, 230);
+    font-weight: 700;
+    
+}
+
+.item-details button:hover {
+    background-color:rgb(8, 49, 230);
+    color: rgb(6, 243, 6);
+
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+li img {
+    max-width: 200px;
+}
