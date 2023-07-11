@@ -77,17 +77,17 @@ let CATEGORIES = {
 };
 
 const displayCategory = (category) => {
-    let categoryItems = CATEGORIES[category].items;
-    let itemsList = document.getElementById("itemsList");
+    const categoryItems = CATEGORIES[category].items;
+    const itemsList = document.getElementById("itemsList");
     itemsList.innerHTML = "";
 
     categoryItems.forEach((item) => {
-        let listItem = document.createElement("li");
-        let image = document.createElement("img");
+        const listItem = document.createElement("li");
+        const image = document.createElement("img");
         image.src = item.img;
         image.alt = item.name;
 
-        let heading = document.createElement("h3");
+        const heading = document.createElement("h3");
         heading.textContent = item.name;
 
         listItem.appendChild(image);
@@ -100,28 +100,28 @@ const displayCategory = (category) => {
         itemsList.appendChild(listItem);
     });
 
-    let itemDetails = document.querySelector(".item-details");
+    const itemDetails = document.querySelector(".item-details");
     itemDetails.style.display = "none";
 };
 
 const displayItem = (item) => {
-    let itemDetails = document.querySelector(".item-details");
+    const itemDetails = document.querySelector(".item-details");
     itemDetails.style.display = "block";
 
-    let itemInfo = document.getElementById("itemInfo");
+    const itemInfo = document.getElementById("itemInfo");
     itemInfo.innerHTML = "";
 
-    let image = document.createElement("img");
+    const image = document.createElement("img");
     image.src = item.img;
     image.alt = item.name;
 
-    let heading = document.createElement("h2");
+    const heading = document.createElement("h2");
     heading.textContent = item.name;
 
-    let description = document.createElement("p");
+    const description = document.createElement("p");
     description.textContent = item.description;
 
-    let price = document.createElement("p");
+    const price = document.createElement("p");
     price.textContent = `Ціна: ${item.price} UAH`;
 
     itemInfo.appendChild(image);
@@ -129,17 +129,17 @@ const displayItem = (item) => {
     itemInfo.appendChild(description);
     itemInfo.appendChild(price);
 
-    let buyButton = document.getElementById("buyButton");
+    const buyButton = document.getElementById("buyButton");
     buyButton.style.display = "block";
 };
 
 const buyItem = () => {
     alert("Товар куплений!");
 
-    let itemDetails = document.querySelector(".item-details");
+    const itemDetails = document.querySelector(".item-details");
     itemDetails.style.display = "none";
 
-    let itemsList = document.getElementById("itemsList");
+    const itemsList = document.getElementById("itemsList");
     itemsList.innerHTML = "";
 }
 
